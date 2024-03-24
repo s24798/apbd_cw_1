@@ -13,5 +13,20 @@ public class Feature
 
         return (double)sum / numbers.Length;
     }
+
+    public static double Max(int[] numbers)
+    {
+        if (numbers == null || numbers.Length == 0)
+            throw new ArgumentException("Tablica liczb nie może być pusta ani null.");
+
+        int max = int.MinValue;
+        foreach (int number in numbers)
+        {
+            if (number > max)
+                max = number;
+        }
+            
+        return max;
+    }
 }
 
