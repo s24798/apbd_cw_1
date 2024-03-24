@@ -8,8 +8,8 @@ public class Feature
             throw new ArgumentException("Tablica liczb nie może być pusta ani null.");
 
         int sum = 0;
-        foreach (int number in numbers)
-            sum += number;
+        foreach (int liczba in numbers)
+            sum += liczba;
 
         return (double)sum / numbers.Length;
     }
